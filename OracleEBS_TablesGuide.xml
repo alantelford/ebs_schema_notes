@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Release Version="12.1.3">
-<Schema>
-<ApplicationName>Projects</ApplicationName>
+<Schema ApplicationName="Projects">
 <UserName>PA</UserName>
 <table>
 <Name>PA_PROJECTS_ALL</Name>
@@ -13,7 +12,7 @@
 <Comment>Contains Project Key Member Information</Comment>
 </view>
 </Schema>
-<Schema>
+<Schema ApplicationName="Foundation">
 <ApplicationName>Foundation</ApplicationName>
 <UserName>APPLSYS</UserName>
 <table>
@@ -22,9 +21,13 @@
 <PrimaryKey>USER_ID</PrimaryKey>
 </table>
 </Schema>
-<Schema>
-<ApplicationName>Human Resources</ApplicationName>
+<Schema ApplicationName="Human Resources">
 <UserName>HR</UserName>
+<table>
+<Name>HR_ALL_ORGANIZATION_UNITS</Name>
+<Comment>Contains Organization Information</Comment>
+<PrimaryKey>ORGANIZATION_ID</PrimaryKey>
+</table>
 <table>
 <Name>PER_ALL_PEOPLE_F</Name>
 <Comment>Contains Person Information</Comment>
@@ -35,8 +38,7 @@
 <Comment>Contains Employee Information</Comment>
 </view>
 </Schema>
-<Schema>
-<ApplicationName>Workflow</ApplicationName>
+<Schema ApplicationName="Workflow">
 <UserName>APPLSYS</UserName>
 <view>
 <Name>WF_USERS</Name>
