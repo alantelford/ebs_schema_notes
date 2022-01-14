@@ -3,9 +3,20 @@
 <Schema ApplicationName="Projects">
 <UserName>PA</UserName>
 <table>
+<Name>PA_CLASS_CODES</Name>
+<Comment>Contains Project Class Base Data</Comment>
+<PrimaryKey>CLASS_CATEGORY,CLASS_CODE</PrimaryKey>
+</table>
+<table>
 <Name>PA_PROJECTS_ALL</Name>
 <Comment>Contains Project Information</Comment>
 <PrimaryKey>PROJECT_ID</PrimaryKey>
+</table>
+<table>
+<Name>PA_PROJECT_CLASSES_ALL</Name>
+<Comment>Contains Project Classification Information</Comment>
+<PrimaryKey>OBJECT_ID,OBJECT_TYPE,CLASS_CATEGORY,CLASS_CODE</PrimaryKey>
+<Note>Data derived from PA_CLASS_CODES</Note>
 </table>
 <view>
 <Name>PAFG_KEY_MEMBERS</Name>
