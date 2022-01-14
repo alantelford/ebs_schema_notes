@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Release Version="12.1.3">
+<Schema>
+<ApplicationName>Projects</ApplicationName>
+<UserName>PA</UserName>
+<table>
+<Name>PA_PROJECTS_ALL</Name>
+<Comment>Contains Project Information</Comment>
+<PrimaryKey>PROJECT_ID</PrimaryKey>
+</table>
+<view>
+<Name>PAFG_KEY_MEMBERS</Name>
+<Comment>Contains Project Key Member Information</Comment>
+</view>
+</Schema>
+<Schema>
+<ApplicationName>Foundation</ApplicationName>
+<UserName>APPLSYS</UserName>
+<table>
+<Name>FND_USER</Name>
+<Comment>Contains User Information</Comment>
+<PrimaryKey>USER_ID</PrimaryKey>
+</table>
+</Schema>
+<Schema>
+<ApplicationName>Human Resources</ApplicationName>
+<UserName>HR</UserName>
+<table>
+<Name>PER_ALL_PEOPLE_F</Name>
+<Comment>Contains Person Information</Comment>
+<PrimaryKey>PERSON_ID, EFFECTIVE_START_DATE,EFFECTIVE_END_DATE</PrimaryKey>
+</table>
+<view>
+<Name>PER_EMPLOYEES_X</Name>
+<Comment>Contains Employee Information</Comment>
+</view>
+</Schema>
+<Schema>
+<ApplicationName>Workflow</ApplicationName>
+<UserName>APPLSYS</UserName>
+<view>
+<Name>WF_USERS</Name>
+<Comment>Contains Workflow User Information</Comment>
+</view>
+<table>
+<Name>WF_LOCAL_ROLES</Name>
+<Comment>Contains Workflow User  Role Information</Comment>
+</table>
+</Schema>
+</Release>
